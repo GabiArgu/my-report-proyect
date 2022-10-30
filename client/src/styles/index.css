@@ -1,0 +1,91 @@
+/* @import "~bootstrap/scss/bootstrap"; */
+.body{
+  background-image: url("../assets/fondo2.svg");
+  background-repeat: repeat-x;
+}
+.fondoLogin{
+font-family: 'Electrolize', sans-serif;
+border-color: #1b3f4b;
+
+}
+.lead{
+  color: black;
+}
+
+.badge{
+ background-color: rgb(36, 75, 90);
+}
+
+.login{
+  color:rgb(0, 0, 0) ;
+  background-color: #00000038;
+}
+.animacion{
+  position: relative; width: 100%; height: 0; padding-top: 100.0000%;
+ padding-bottom: 0; box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16); margin-top: 1.6em; margin-bottom: 0.9em; overflow: hidden;
+ border-radius: 8px; will-change: transform;
+}
+.iframe{
+  position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0;margin: 0;
+}
+.imagenlogo{
+  border-radius: 50%;
+  opacity: value;
+
+}
+.loguito{
+  border-radius: 100%;
+  opacity: value;
+  
+}
+.bgs{width: 80%; height: 300px; border-radius: 21px 21px 0 0;}
+
+.over{
+  max-height: 30vh;
+}
+.cuadro1{
+  background-color: bisque;
+}
+.cuadro2{
+  background-color: bisque;
+}
+.canvas{
+  display: block; width: 519px; height: 219px;
+}
+.albunsito{
+  background-color:rgba(255, 255, 255, 0);
+}
+.album{
+  Background-color:rgba(255, 255, 255, 0)
+}
+.rowi{
+  background-color: #01779e54;
+  border-radius: 1000px;
+}
+.navbar2{
+  background-color: rgba(255, 255, 255, 0.671);
+  border-radius: 1000px;
+}
+#input{
+  border:rgba(253, 253, 253, 0.712);
+  background-color: rgba(104, 103, 103, 0.411);
+  background-origin: padding-box;
+  border-radius: 100px;
+}
+.olvidaste{
+  color: rgba(0, 0, 0, 0.411);
+  
+}
+.ingresar{
+  border-radius: 100px;
+  text-align: center;
+  color: rgb(3, 3, 3);
+  background-color:  rgba(0, 0, 0, 0.411);
+}
+.volver{
+  color: black;
+  
+}
+.form-select{
+  background-color:rgba(0, 0, 0, 0.411);
+}
