@@ -60,7 +60,7 @@ const getUsers = async (req, res) => {
 
 //Ruta post para usuarios
 const postUsers = async (req, res) => {
-
+console.log(req.body)
    const {
       nombreUsuario,
       email,

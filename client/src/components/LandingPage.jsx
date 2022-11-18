@@ -50,7 +50,7 @@ function LandingPages() {
                     preserveAspectRatio="xMidYMid slice"
                     focusable="false"
                   >
-                    <title>Placeholder</title>
+                    <title>myReports</title>
                     <rect width="100%" height="100%" fill="#55595c"></rect>
                   </svg>
                 </div>
@@ -67,7 +67,7 @@ function LandingPages() {
                     preserveAspectRatio="xMidYMid slice"
                     focusable="false"
                   >
-                    <title>Placeholder</title>
+                    <title>myReports</title>
                     <rect width="100%" height="100%" fill="#55595c"></rect>
                   </svg>
                 </div>
@@ -84,7 +84,7 @@ function LandingPages() {
                     preserveAspectRatio="xMidYMid slice"
                     focusable="false"
                   >
-                    <title>Placeholder</title>
+                    <title>myReports</title>
                     <rect width="100%" height="100%" fill="#55595c"></rect>
                   </svg>
                 </div>

@@ -64,9 +64,21 @@ border-color: #1b3f4b;
 }
 .navbar2{
   background-color: rgba(255, 255, 255, 0.671);
-  border-radius: 1000px;
+
 }
 #input{
+  border:rgba(253, 253, 253, 0.712);
+  background-color: rgba(104, 103, 103, 0.411);
+  background-origin: padding-box;
+  border-radius: 100px;
+}
+#input2{
+  border:rgba(253, 253, 253, 0.712);
+  background-color: rgba(104, 103, 103, 0.411);
+  background-origin: padding-box;
+  border-radius: 100px;
+}
+#input3{
   border:rgba(253, 253, 253, 0.712);
   background-color: rgba(104, 103, 103, 0.411);
   background-origin: padding-box;
@@ -91,4 +103,23 @@ border-color: #1b3f4b;
 }
 .dropdown-menu{
   position: absolute; inset: 0px 0px auto auto; margin: 0px; transform: translate3d(0px, 34px, 0px);
+}
+.contflu{
+  grid-template-columns: 1fr 2fr;
+}
+.feather{
+  color: rgba(255, 255, 255, 0.685);
+}
+#span{
+  color:rgba(255, 255, 255, 0.685);
+}
+#sidebarMenu{
+  background-color:  rgba(18, 123, 155, 0.486);
+  border-radius: inherit;
+  text-align: justify;
+}
+.btn{
+  color:rgba(255, 255, 255, 0.685);
+ 
+
 }
