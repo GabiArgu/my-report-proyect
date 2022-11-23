@@ -1,45 +1,53 @@
-import { BrowserRouter as Router, Route , Switch } from 'react-router-dom'
-import React, {useState, useEffect} from "react";
-import { Session } from "./Contexts/Session";
-import { StudentInfo } from "./Contexts/StudentInfo";
-import Footer from './components/layout/Footer';
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+
+//Componentes
+import Footer from "./components/layout/Footer";
 import LandingPages from "./components/LandingPage";
-import Login from "./components/auth/Login"
-import Register from "./components/auth/Register"
-import Home from"./components/Home"
-import Avisos from './components/posts/Avisos';
+import Login from "./components/auth/Login";
+import Register from "./components/auth/Register";
+import HomeProfesores from "./components/HomeProfesores";
+import HomeAdmin from "./components/HomeAdmin";
+import HomeAlumnos from "./components/HomeAlumnos";
+import CrudAlumnos from "./posts/CrudAlumnos";
+//
+
+
+
+//Importaciones de  REDUX 
+import { Provider } from "react-redux";
+import {store} from "../src/redux/store"
+
+// import {ApiProvider} from "@reduxjs/toolkit/query/react"
+// import {apiSlice} from "./api/apiSlice"
+//
+
 function App() {
-  useEffect(() => {
-    if(localStorage.getItem('rstoken')){
-      setSession(localStorage.getItem('rstoken'))
-    }
-  }, [])
 
-  //Almacena información de la sesión
-  const [session, setSession] = useState(null);
-  //Almacena información de un estudiante en particular.
-  const [studentInfo, setStudentInfo] = useState(null)
   return (
-    <Router>
+    //api:instancia donde guardo consultas hechas desde componentes POST PUT 
+    <Provider store={store}>
+      <Router>
+        <Route exact path={"/"} component={LandingPages} />
 
-    <Route exact path={"/"} component={LandingPages}/>
-    
-    <section>
-    <Session.Provider value = {[session, setSession]}>
-    <StudentInfo.Provider value = {[studentInfo, setStudentInfo]}>
-      <Switch>
-     
-        <Route exact path={"/login"} component={Login}/>
-        <Route exact path={"/register"} component={Register}/>
-        <Route exact path={"/home"} component={Home}/>
-        <Route exact path={"/avisos"} component={Avisos}/>
-      </Switch>
-      </StudentInfo.Provider>
-    </Session.Provider>
-    </section>
-    <Footer/>
-  </Router>
+        <section>
+          <Switch>
+            <Route exact path={"/login"} component={Login} />
+            <Route exact path={"/register"} component={Register} />
+            <Route exact path={"/crudAlumnos"} component={CrudAlumnos} />
+            <Route
+              exact
+              path={"/homeProfesores"}
+              component={HomeProfesores}
+            />
+            <Route exact path={"/homeAdmin"} component={HomeAdmin} />
+            <Route exact path={"/homeAlumnos"} component={HomeAlumnos} />
+          </Switch>
+        </section>
+        <Footer />
+      </Router>
+    </Provider>
   );
 }
 
+//Exportacion del modulo
 export default App;

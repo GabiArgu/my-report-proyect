@@ -2,7 +2,7 @@ import "../../styles/index.css";
 import { FaReply, FaRegEdit } from "react-icons/fa";
 import { Formik, Form, Field, ErrorMessage } from "formik";
 import { useState } from "react";
-import { registrarnuevoUsuario } from '../../utils/fetch.apis'
+import { registrarnuevoUsuario } from '../../redux/actions/auth'
 import { useHistory } from 'react-router-dom';
 
 function Register() {
@@ -63,8 +63,9 @@ function Register() {
         setFormEnviado(true);
         setTimeout(() => {
           setFormEnviado(false);
-        }, 5000);
-        history.push('/login');
+          history.push('/login');
+        }, 3000);
+       
       }}
     >
       {/* RenderedProp renderizamos el formulario pero dentro de una funcion donde podremos nyectar valores formik*/}
@@ -125,7 +126,7 @@ function Register() {
                   aria-label=".form-select-lg example"
                 
                 >
-                  <option defaultValue={'DEFAULT'} disabled>Elegir un Rol</option>
+                  <option defaultValue={'DEFAULT'}>Elegir un Rol 🧷 </option>
                   <option value="alumno">Alumno 👨‍🎓👩‍🎓 </option>
                   <option value="profesor">Profesor 👩‍🏫👨‍🏫</option>
                   <option value="admin">Administrativo 👩‍💼👨‍💼</option>

@@ -1,6 +1,8 @@
 import React from 'react'
+import { useSelector } from 'react-redux'
 
 const Alumnostable = () => {
+  const estadoAlumnos=useSelector((state)=>state.Alumnos)
   return (
     <>
      <h2>Alumnos</h2>
@@ -14,18 +16,12 @@ const Alumnostable = () => {
                   </tr>
                 </thead>
                 <tbody>
-                  <tr>
-                    <td>Arguello Gabriel</td>
-                    <td>Gaby10@gmail.com</td>
-                  </tr>
-                  <tr>
-                    <td>Jessica Arguello</td>
-                    <td>jess30@gmail.com</td>
-                  </tr>
-                  <tr>
-                    <td>Dario Benitez</td>
-                    <td>dary40@gmail.com</td>
-                  </tr>
+                  {estadoAlumnos.map(alumno=>
+                    (<tr  key={alumno.id}>
+                    <td>{alumno.nombre}</td>
+                    <td>{alumno.email}</td>
+                    <button></button>
+                  </tr>))}
                 </tbody>
               </table>
             </div></>

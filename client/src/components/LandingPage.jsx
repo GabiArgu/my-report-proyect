@@ -1,10 +1,14 @@
-import Navbar2 from "./layout/Navbar2";
+import Navbar from "./layout/Navbar";
 import mesa from "../assets/mesa.jpg";
 import mr from "../assets/videoreports2gif.gif";
+import vista1 from "../assets/vista2.png";
+import vista2 from "../assets/vista1.0.png";
+import vista3 from "../assets/vista3.0.png"
+
 function LandingPages() {
   return (
     <>
-      <Navbar2 />
+      <Navbar />
       <div className="container justify-content-center align-content-center">
         <br />
 
@@ -38,55 +42,19 @@ function LandingPages() {
         <div className="album py-5">
           <div className="divalbun container">
             <div className="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
-              <div className="col">
-                <div className="card shadow-sm">
-                  <svg
-                    className="bd-placeholder-img card-img-top"
-                    width="100%"
-                    height="225"
-                    xmlns="http://www.w3.org/2000/svg"
-                    role="img"
-                    aria-label="Placeholder: Thumbnail"
-                    preserveAspectRatio="xMidYMid slice"
-                    focusable="false"
-                  >
-                    <title>myReports</title>
-                    <rect width="100%" height="100%" fill="#55595c"></rect>
-                  </svg>
+              <div className="col" id="vista1" >
+                <div className="card shadow-sm" >
+                  <img src={vista1} height="250px" width="370px"  id="imagenvista1"/>
                 </div>
               </div>
-              <div className="col">
+              <div className="col" id="vista2">
                 <div className="card shadow-sm">
-                  <svg
-                    className="bd-placeholder-img card-img-top"
-                    width="100%"
-                    height="225"
-                    xmlns="http://www.w3.org/2000/svg"
-                    role="img"
-                    aria-label="Placeholder: Thumbnail"
-                    preserveAspectRatio="xMidYMid slice"
-                    focusable="false"
-                  >
-                    <title>myReports</title>
-                    <rect width="100%" height="100%" fill="#55595c"></rect>
-                  </svg>
+                <img src={vista2} height="250px" width="370px"  id="imagenvista2"/>
                 </div>
               </div>
-              <div className="col">
+              <div className="col" id="vista3">
                 <div className="card shadow-sm">
-                  <svg
-                    className="bd-placeholder-img card-img-top"
-                    width="100%"
-                    height="225"
-                    xmlns="http://www.w3.org/2000/svg"
-                    role="img"
-                    aria-label="Placeholder: Thumbnail"
-                    preserveAspectRatio="xMidYMid slice"
-                    focusable="false"
-                  >
-                    <title>myReports</title>
-                    <rect width="100%" height="100%" fill="#55595c"></rect>
-                  </svg>
+                <img src={vista3} height="250px" width="370px" id="imagenvista3" />
                 </div>
               </div>
             </div>

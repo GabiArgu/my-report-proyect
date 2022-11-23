@@ -33,9 +33,20 @@ border-color: #1b3f4b;
   opacity: value;
 
 }
+
+.font1{
+  vertical-align: inherit;
+}
+.font2{
+  vertical-align: inherit;
+}
+.font3{
+  vertical-align: inherit;
+}
 .loguito{
   border-radius: 100%;
   opacity: value;
+  align-content: center;
   
 }
 .bgs{width: 80%; height: 300px; border-radius: 21px 21px 0 0;}
@@ -87,6 +98,28 @@ border-color: #1b3f4b;
 .olvidaste{
   color: rgba(0, 0, 0, 0.411);
   
+}
+#imagenvista1{
+  border-radius: 10px;
+}
+#imagenvista2{
+  border-radius: 10px;
+}
+#imagenvista3{
+  border-radius: 10px;
+}
+#vista1{
+  padding-right: 360px;
+  border-radius: 50%;
+  border-color: aliceblu1;
+}
+#vista2{
+  padding-right: 360px;
+  border-radius: 50%;
+}
+#vista3{
+   padding-right: 360px;
+   border-radius: 50%;
 }
 .ingresar{
   border-radius: 100px;

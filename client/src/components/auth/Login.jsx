@@ -2,7 +2,7 @@ import "../../styles/index.css";
 import { FaReply, FaPlay } from "react-icons/fa";
 import { Formik,Form,Field,ErrorMessage } from "formik";
 import {useState} from "react"
-import { loginusuario } from '../../utils/fetch.apis'
+import { loginusuario } from '../../redux/actions/auth'
 import { useHistory } from 'react-router-dom';
 
 
@@ -45,8 +45,8 @@ function Login() {
         setFormEnviado(true)
         setTimeout(() => {
           setFormEnviado(false)
-        }, 5000);
-        history.push('/home');
+        }, 3000);
+        history.push('/homeAlumnos');
     
         
       }}
